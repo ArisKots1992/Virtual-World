@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WorldController">
+   <children>
+      <ImageView fx:id="mainImage" fitHeight="540.0" fitWidth="960.0" pickOnBounds="true" preserveRatio="true">
+      </ImageView>
+      <ImageView fx:id="item1" fitHeight="130.0" fitWidth="130.0" layoutX="77.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item2" fitHeight="130.0" fitWidth="130.0" layoutX="388.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item3" fitHeight="130.0" fitWidth="130.0" layoutX="632.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item4" fitHeight="130.0" fitWidth="130.0" layoutX="490.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="item5" fitHeight="130.0" fitWidth="130.0" layoutX="522.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" />
+     
+      <ImageView fx:id="map" fitHeight="130.0" fitWidth="170.0" layoutX="12.0" layoutY="410.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #000000;">
+      </ImageView>
+      <ImageView fx:id="compass_arrow" fitHeight="80.0" fitWidth="80.0" layoutX="24.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="compass" fitHeight="80.0" fitWidth="80.0" layoutX="24.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+     
+      <Pane layoutX="331.0" layoutY="437.0" opacity="0.78" prefHeight="106.0" prefWidth="301.0">
+         <children>
+          
+            <ImageView fx:id="arrow_left" fitHeight="66.0" fitWidth="87.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+           
+            <ImageView fx:id="arrow_right" fitHeight="66.0" fitWidth="87.0" layoutX="200.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+           
+            <ImageView fx:id="arrow_straight" fitHeight="87.0" fitWidth="66.0" layoutX="120.0" layoutY="-23.0" pickOnBounds="true" preserveRatio="true">
+            </ImageView>
+            
+         </children>
+      </Pane>
+      <VBox fx:id="vBox" layoutX="864.0" layoutY="19.0" opacity="0.5" prefHeight="500.0" prefWidth="80.0" style="-fx-background-color: #D3D3D3; -fx-border-color: #000000; -fx-border-radius: 7; -fx-background-radius: 7; -fx-border-width: 2;" />
+      <VBox layoutX="864.0" layoutY="19.0" prefHeight="500.0" prefWidth="80.0">
+         <children>
+            <ImageView fx:id="inventoryItem1" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="inventoryItem2" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="inventoryItem3" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="inventoryItem4" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="inventoryItem5" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="869.0" layoutY="435.0" mnemonicParsing="false" onAction="#dropItem" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #778899; -fx-border-color: #000000; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-radius: 5;" text="DROP" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Black" size="15.0" />
+         </font>
+         <effect>
+            <Blend />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="869.0" layoutY="475.0" mnemonicParsing="false" onAction="#dropAllItems" prefHeight="30.0" prefWidth="70.0" style="-fx-background-color: #778899; -fx-border-color: #000000; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-radius: 5;" text="DROP ALL" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="10.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <Blend />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
